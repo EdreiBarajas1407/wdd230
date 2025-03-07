@@ -1,7 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const currentYear = new Date().getFullYear();
-    document.getElementById('copyright-year').textContent = currentYear;
-    const lastModifiedDate = new Date(document.lastModified);
-    const formattedDate = lastModifiedDate.toLocaleDateString();
-    document.getElementById('last-modified').textContent = formattedDate;
-});
+const date = new Date();
+const year = date.getFullYear();
+document.getElementById("year").innerHTML = year;
+const oLastModified = new Date(document.lastModified);
+const formattedLastModified = oLastModified.toLocaleString();
+document.getElementById("last-modified").innerHTML = formattedLastModified;

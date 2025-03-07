@@ -8,23 +8,52 @@
     <meta name="description" content="Home Page of the course WDD 230 - Web Frontend Development by Edrei Barajas">
     <meta name="author" content="Edrei Barajas">
 
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img>
-        <span></span>
+        <img src="images/profile.jpg" alt="Edrei Barajas" width="75" height="100">
+        <span>Edrei Barajas</span>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html"></a>Home</li>
-            <li><a href="chamber.html"></a>Chamber</li>
-            <li><a href="site-plan.html"></a>Site Plan</li>
-            <li><a href="form.html"></a>Form</li>
+            <li class="active"><a href="index.html"></a>Home</li>
+            <li><a href="#"></a>Chamber</li>
+            <li><a href="#"></a>Site Plan</li>
+            <li><a href="#"></a>Form</li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>WDD 230: Web Fronted Development</h1>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="#"></a>Week 01:</li>
+                <li><a href="#"></a>Week 02:</li>
+                <li><a href="#"></a>Week 03:</li>
+                <li><a href="#"></a>Week 04:</li>
+                <li><a href="#"></a>Week 05:</li>
+                <li><a href=""></a>Week 06:</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <p>Weather</p>
+            <p>Number of Visits</p>
+            <p>Mexico City, Mexico</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year">2025</span>&bull; Edrei Barajas</p>
+        <p><span id="lastModified"></span> Last Modification: 03/07/2025</p>
+    </footer>
+    <script src="getDates.js"></script>
 </body>
 
 </html>

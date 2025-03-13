@@ -19,7 +19,7 @@ header {
     gap: 1.5rem;
     position: relative;
     background-color: #63768D;
-    color: #fff;
+    color: #ffffff;
 }
 
 header img {
@@ -40,14 +40,14 @@ h1 {
 
 h2 {
     background-color: #63768D;
-    color: #fff;
+    color: #ffffff;
     border: 0.5px solid black;
     margin: 1rem auto;
 }
 
 nav {
     background-color: #8AC6D0;
-    color: #fff;
+    color: black;
     text-align: center;
 }
 

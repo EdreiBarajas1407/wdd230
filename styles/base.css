@@ -79,6 +79,17 @@ main {
     max-width: 640px;
 }
 
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
 section {
     max-width: 640px;
     padding: 1rem;

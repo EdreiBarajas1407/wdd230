@@ -1,14 +1,7 @@
-export function toggleMenu() {
-    const menuButton = document.querySelector(".menu-button");
-    const nav = document.querySelector("#nav");
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-    menuButton.addEventListener("click", () => {
-        nav.classList.toggle("show");
-        const menuImage = menuButton.textContent;
-        if (menuImage == "☰") {
-            menuButton.textContent = "✖";
-        } else {
-            menuButton.textContent = "☰";
-        }
-    })
-};
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});

@@ -1,5 +1,5 @@
 const modeButton = document.querySelector("#mode");
-const main = document.querySelector("body");
+const main = document.querySelector("main, body");
 
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("🌙")) {

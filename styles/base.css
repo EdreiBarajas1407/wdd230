@@ -71,13 +71,11 @@ nav .active {
 }
 
 #menu {
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 0;
     background: none;
     color: #000;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
 }
 
 #menu::before {
@@ -93,8 +91,8 @@ nav .active {
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    background-color: #333;
-    color: #fff;
+    background-color: #8AC6D0;
+    color: black;
 }
 
 .navigation a {
@@ -102,13 +100,7 @@ nav .active {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #fff;
-}
-
-.navigation a:hover {
-    background-color: #bbb;
-    color: #333;
-    font-weight: 700;
+    color: black;
 }
 
 .open a {

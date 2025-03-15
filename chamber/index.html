@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://EdreiBarajas1407.github.io/wdd230/">
 
     <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/large.css">
+    <link href="styles/large.css" rel="stylesheet">
 
     <link rel="icon" href="favicon.ico">
 </head>
@@ -27,18 +27,60 @@
     <header>
         <h1>Coyoacan Chamber of Commerce</h1>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
+        <button type="button" id="menu"></button>
     </header>
     <main>
+        <section id="hero">
+            <img src="images/hero_1.png" alt="Hero Image">
+            <a href="join.html" class="join-button">Join Now</a>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Business Networking - March 25</li>
+                <li>Marketing Strategies Webinar - April 10</li>
+                <li>Local Business Expo - May 5</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-card">
+                <p>🌤️ 75°F | Sunny</p>
+                <p>Wind: 5 mph | Humidity: 60%</p>
+            </div>
+        </section>
 
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight">
+                <h3>Company A</h3>
+                <p>Leading provider of IT solutions.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company B</h3>
+                <p>Best organic food in town.</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company C</h3>
+                <p>Experts in financial consulting.</p>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Edrei Barajas | Coyoacan Chamber of Commerce | WDD230 Project</p>
+        <p> Last Modification: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+
 </body>
 
 </html>

@@ -61,7 +61,7 @@ nav a {
     border: 0;
     background: none;
     color: #ffffff;
-    margin: auto;
+    margin: 25px;
 }
 
 #menu::before {
@@ -110,7 +110,6 @@ nav a {
     position: absolute;
     top: 50%;
     right: 20px;
-    transform: translateY(-50%);
     background-color: var(--accent2-color);
     color: black;
     padding: 20px 30px;
@@ -136,34 +135,7 @@ section {
 
 #events {
     background-color: #f8f9fa;
-    text-align: center;
-}
-
-#events ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#events li {
-    background-color: white;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
-}
-
-#weather {
-    background-color: #3c4161;
-    color: white;
-    text-align: center;
-    width: 300px;
-}
-
-.weather-card {
-    background-color: white;
-    color: black;
-    padding: 15px;
-    border-radius: 8px;
+    text-align: justify;
 }
 
 #spotlights {
@@ -179,13 +151,11 @@ section {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    max-width: 500px;
     margin: 20px auto;
     text-align: center;
 }
 
 .spotlight {
-    width: 100%;
     background-color: #f8f9fa;
     padding: 20px;
     border: 10px;

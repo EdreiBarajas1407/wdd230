@@ -149,9 +149,19 @@ picture {
     text-align: center;
 }
 
-picture img {
+.hero-container {
+    position: relative;
+}
+
+.hero-container img {
     display: block;
     margin: 0 auto;
+}
+
+.hero-container span {
+    position: absolute;
+    color: #ffffff;
+    border: yellow 2px solid;
 }
 
 iframe {

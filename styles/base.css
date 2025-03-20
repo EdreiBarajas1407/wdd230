@@ -127,7 +127,6 @@ main {
     color: #ffffff;
 }
 
-
 section {
     max-width: 640px;
     padding: 1rem;
@@ -143,4 +142,23 @@ footer {
     text-align: center;
     padding: 2rem;
     background-color: #72BDA3;
+}
+
+picture {
+    display: block;
+    text-align: center;
+}
+
+picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+iframe {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
 }

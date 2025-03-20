@@ -27,7 +27,7 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Edrei Barajas" width="75" height="100">
+        <img src="images/profile.webp" alt="Edrei Barajas" width="75" height="100">
         <span>Edrei Barajas</span>
         <div id="mode">
             🌙
@@ -42,16 +42,29 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+
     <h1>WDD 230: Web Fronted Development</h1>
+
+    <div class="hero-container">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/temple-hero-small.webp" />
+            <img src="images/temple-hero-large.webp" alt="Mexico City Temple" width="640" height="400" />
+        </picture>
+    </div>
+
     <main>
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
                 <li><a href="#"></a>Week 01:</li>
-                <li><a href="#"></a>Week 02:</li>
-                <li><a href="#"></a>Week 03: <a href="week03/images/landscape.webp">WebP</a> <a
-                        href="week03/lazyload.html">Lazy Load Page</a><a href="week03/responsive-images.html">Responsive
-                        Images</a><a href="week03/bom.html">BOM</a></li>
+                <li><a href="#"></a>Week 02:<a href="week02/design.html" target="_blank">Design site | </a>
+                    <a href="https://codepen.io/Edrei-Barajas/pen/XJWeRWK" target="_blank">CodePen
+                    </a>
+                </li>
+                <li><a href="#"></a>Week 03: <a href="week03/images/landscape.webp">WebP | </a> <a
+                        href="week03/lazyload.html">Lazy Load Page | </a><a
+                        href="week03/responsive-images.html">Responsive
+                        Images | </a><a href="week03/bom.html">BOM</a></li>
                 <li><a href="#"></a>Week 04:</li>
                 <li><a href="#"></a>Week 05:</li>
                 <li><a href="#"></a>Week 06:</li>
@@ -63,10 +76,11 @@
             <p>Number of Visits</p>
             <p>Mexico City, Mexico</p>
         </section>
-        <a href="week02/design.html" target="_blank">Design site</a>
-        <a href="https://codepen.io/Edrei-Barajas/pen/XJWeRWK" target="_blank">CodePen
-        </a>
     </main>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8830.665744471033!2d-99.16239494977876!3d19.351855547833026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1742482012640!5m2!1ses-419!2smx"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy;<span id="year"></span> | Edrei Barajas | Mexico</p>
         <p> Last Modification: <span id="last-modified"></span></p>

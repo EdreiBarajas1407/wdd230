@@ -70,3 +70,24 @@
         width: 100%;
     }
 }
+
+/* Discover Page */
+
+.sidebar {
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

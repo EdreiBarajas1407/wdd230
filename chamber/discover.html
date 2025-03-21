@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coyoacan
+        Chamber of Commerce</title>
+
+    <meta name="description"
+        content="This chamber web site is intended to help the comunity and people who is interested in personal and business development">
+    <meta name="author" content="Edrei Barajas">
+
+    <meta property="og:title" content="Coyoacan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2024/05/13232652/museos-coyoacan-cdmx-1024x683.jpg">
+    <meta property="og:url" content="https://EdreiBarajas1407.github.io/wdd230/">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Coyoacan Chamber of Commerce</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+    </header>
+    <main class="main">
+        <div class="sidebar">
+            <h2>Local Information</h2>
+            <p id="visit-message"></p>
+            <h3>Events</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa eius omnis hic neque quaerat sunt
+                    saepe corrupti eaque delectus ipsam natus sed ea dolorum nesciunt assumenda, accusantium excepturi
+                    minus impedit architecto iure est maxime! Perferendis recusandae tempora voluptatum unde eos nobis
+                    quos officiis est, praesentium rem nemo eaque labore! Voluptatem, vero alias quam voluptate atque ea
+                    error? Totam dolorum voluptatibus explicabo tenetur ratione sequi dicta vero pariatur in! Optio
+                    recusandae, distinctio mollitia autem error quos beatae. Numquam atque officia velit delectus non
+                    vel quasi ducimus modi maiores laborum quibusdam tempore ea, eveniet, maxime dolores id dignissimos?
+                    Fugiat molestias repellendus adipisci.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam maiores voluptas dolores
+                    nam ipsa saepe, enim distinctio inventore hic modi deleniti magni sit qui obcaecati reprehenderit
+                    error nobis consequuntur ratione animi quae doloribus nihil? Odio eum earum, sint iusto id
+                    voluptatibus perspiciatis, ipsam vel quae porro tempore mollitia dignissimos minus optio cumque
+                    reprehenderit est animi harum accusantium molestiae voluptate impedit tempora architecto iste.
+                    Quaerat reiciendis dolorum officiis velit accusantium ducimus error ut accusamus aspernatur
+                    repudiandae voluptas doloribus iste nisi earum ad id, at in molestias nemo debitis quam autem
+                    asperiores. Accusamus ad aut minus repudiandae ipsum illo, laboriosam quo sunt, laudantium dolore
+                    distinctio architecto, sapiente consectetur voluptas id! Nemo reprehenderit esse aspernatur vel
+                    praesentium dolor, velit exercitationem natus voluptatum culpa eligendi rem mollitia aut magni iste.
+                    Nemo laudantium delectus, assumenda ducimus voluptatem voluptate perferendis dolorum tempora
+                    molestias velit rem tenetur sapiente debitis ipsa hic tempore maiores accusamus. Minus soluta quos
+                    maxime pariatur libero expedita deserunt voluptatibus earum quas aspernatur et, delectus, molestiae
+                    perspiciatis. Enim in, exercitationem modi tempore sit ex, repellat iste vero qui nesciunt debitis
+                    commodi adipisci porro incidunt veniam a vitae. Debitis, possimus. Dolorem, repellat similique fuga
+                    assumenda id dolore cum blanditiis numquam voluptate? Excepturi, amet! Sit!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos, sed error, repudiandae
+                    nulla corrupti laudantium aliquam dolorem rerum, laboriosam cupiditate! Odio magnam, corrupti iure
+                    rem saepe pariatur dolore ducimus non, asperiores quo quis dolorum aut veniam maxime. Eaque rerum
+                    culpa iste natus, ea tempore recusandae unde dolor, molestiae ullam ipsa earum quis reiciendis,
+                    laboriosam officia pariatur repudiandae explicabo. Dicta vel beatae, quia est rem provident.
+                    Consequuntur sapiente numquam quae enim sint id eius, molestiae ex nostrum nisi vel voluptatem iusto
+                    et laborum. Sint ab distinctio voluptates, molestias minus quia praesentium consectetur ullam quas
+                    odio. Fugit corporis deserunt eum quo?</li>
+            </ul>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button onclick="prevMonth()">&#9665;</button>
+                    <h2 id="month-year"></h2>
+                    <button onclick="nextMonth()">&#9655;</button>
+                </div>
+                <div class="days" id="days-container"></div>
+            </div>
+        </div>
+        <div>
+            <h2>Local Attractions</h2>
+            <div class="image-container">
+                <img src="images/coyoacan-1.webp" alt="Scenic Park" loading="lazy" width="320" height="210">
+                <img src="images/coyoacan-2.webp" alt="Downtown View" loading="lazy" width="320" height="210">
+                <img src="images/coyoacan-3.webp" alt="Historic Landmark" loading="lazy" width="320" height="210">
+                <img src="images/coyoacan-5.webp" alt="Riverfront" loading="lazy" width="320" height="210">
+                <img src="images/coyoacan-6.webp" alt="Sunset Over Hills" loading="lazy" width="320" height="210">
+                <img src="images/coyoacan-3.webp" alt="Local Museum" loading="lazy" width="320" height="210">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Edrei Barajas | Coyoacan Chamber of Commerce | WDD230 Project</p>
+        <p> Last Modification: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/calendar.js"></script>
+</body>
+
+</html>

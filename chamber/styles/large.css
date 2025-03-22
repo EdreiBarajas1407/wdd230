@@ -69,25 +69,44 @@
     #weather {
         width: 100%;
     }
-}
 
-/* Discover Page */
+    /* Discover Page */
 
-.sidebar {
-    width: 100%;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+        background-color: #f4f4f4;
+        height: 100%;
+    }
 
-.main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    padding: 10px;
-}
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 10px;
+    }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    figure {
+        background-color: #fff;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: .5rem;
+    }
+
+    figcaption {
+        font-size: bold;
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }

@@ -70,7 +70,7 @@ nav a {
 }
 
 #menu.open::before {
-    content: "❌";
+    content: "X";
 }
 
 .navigation {
@@ -170,14 +170,25 @@ footer {
 }
 
 /*Discover page */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+}
 
 .calendar {
-    width: 50%;
+    width: 80%;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .calendar-header {
@@ -203,8 +214,8 @@ footer {
 }
 
 .day {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;

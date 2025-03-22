@@ -228,3 +228,15 @@ main {
     color: white;
     font-weight: bold;
 }
+
+.sidebar {
+    text-align: justify;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+#visit-message {
+    text-align: center;
+}

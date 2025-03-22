@@ -7,7 +7,7 @@ function renderCalendar() {
 
     const month = currentDate.getMonth();
     const year = currentDate.getFullYear();
-    monthYear.textContent = new Intl.DateTimeFormat("es-ES", { month: "long", year: "numeric" }).format(currentDate);
+    monthYear.textContent = new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(currentDate);
 
     const firstDay = new Date(year, month, 1).getDay();
     const lastDate = new Date(year, month + 1, 0).getDate();

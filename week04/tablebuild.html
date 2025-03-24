@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>HTML Tables for Data Presentation</title>
+    <meta name="description" content="Page to practice good practices of tables in html and css">
+    <meta name="author" content="Edrei Barajas">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/tablebuild.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+        <thead>
+            <tr>
+                <th colspan="4" scope="col" class="black-bg">ACME Wildwest Services</th>
+            </tr>
+            <tr>
+                <td class="black-bg"></td>
+                <th scope="col" class="grey-bg">Basic</th>
+                <th scope="col" class="grey-bg">Premium</th>
+                <th scope="col" class="grey-bg">Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Feature 1</th>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 2</th>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <th scope="row">Feature 3</th>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔️</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

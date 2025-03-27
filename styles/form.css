@@ -21,17 +21,23 @@ form label {
     font-size: .8rem;
 }
 
-#rating-element {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    position: relative;
+#values {
+    width: 64%;
+    margin-bottom: 0;
 }
 
+#rangevalue {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
 
-#display-selected-rating {
-    position: absolute;
-    left: 100%;
+#rangevalues {
+    display: flex;
+    width: 215px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
 }
 
 form input {
@@ -53,11 +59,16 @@ form input:required:valid {
 
 form input[type="submit"] {
     margin-top: 2rem;
+    margin-bottom: 1rem;
     width: 50%;
     background-color: var(--primary-color);
     border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 2px 2px 4px var(--accent1-color);
+    box-shadow: 2px 2px 4px var(--accent-1);
     font-weight: 500;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
 }
 
 #form-message-pass {

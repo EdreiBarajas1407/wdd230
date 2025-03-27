@@ -57,23 +57,23 @@
                 <label>Email <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
                         title="Please enter a valid email address in the format user@byui.edu"></label>
                 <div id="form-message-email"></div>
-                <label id="rating-element">
-                    Page Rating
-                    <input id="rating-input" type="range" min="1" max="10" value="1" step="1" list="rangevalues">
-                    <span id="display-selected-rating">0</span>
-                    <datalist id="rangevalues">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </datalist>
-                </label>
+
+                <label for="r">Page Rating</label>
+                <div id="rangevalue">1</div>
+                <input type="range" id="values" name="values" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
                 <input id="submit" type="submit" value="Rate Page">
             </fieldset>
         </form>
@@ -87,6 +87,10 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/rangeValues.js"></script>
+    <script src="scripts/matchPass.js"></script>
+    <script src="scripts/email.js"></script>
+
 </body>
 
 </html>

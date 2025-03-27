@@ -1,0 +1,72 @@
+form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    margin: .5rem 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form legend {
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form label,
+form input {
+    display: block;
+}
+
+form label {
+    margin-top: 1.5rem;
+    font-size: .8rem;
+}
+
+#rating-element {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+}
+
+
+#display-selected-rating {
+    position: absolute;
+    left: 100%;
+}
+
+form input {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .8rem 0 .8rem .3rem;
+    margin-top: .1rem;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+form input:required {
+    border-left: 6px solid #ce3838
+}
+
+form input:required:valid {
+    border-left: 6px solid var(--secondary-color);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    width: 50%;
+    background-color: var(--primary-color);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px var(--accent1-color);
+    font-weight: 500;
+}
+
+#form-message-pass {
+    display: inline-block;
+    color: #ce3838;
+
+}
+
+#form-message-email {
+    display: inline-block;
+    color: #ce3838;
+}

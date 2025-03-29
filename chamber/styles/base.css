@@ -269,7 +269,7 @@ form label {
     font-size: .8rem;
 }
 
-form input {
+form input textarea {
     border: 1px solid black;
     border-radius: 4px;
     padding: .8rem 0 .8rem .3rem;

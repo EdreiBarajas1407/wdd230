@@ -240,3 +240,96 @@ main {
 #visit-message {
     text-align: center;
 }
+
+/*Join Page */
+
+form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 16px;
+    margin: .5rem 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: var(--font-family);
+    text-align: justify;
+}
+
+form legend {
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form label,
+form input {
+    display: block;
+}
+
+form label {
+    margin-top: 1.5rem;
+    font-size: .8rem;
+}
+
+form input {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .8rem 0 .8rem .3rem;
+    margin-top: .1rem;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.wf1 select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    background-color: var(--accent1-color);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 4px var(--primary-color);
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.benefits-container {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.benefits-container h2 {
+    margin-top: 0;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
+}
+
+.wf1 input:required {
+    border-right: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px green;
+}

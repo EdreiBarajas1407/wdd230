@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+
+    <meta name="description"
+        content="Join us in this incredible adventure to develop and increase your career. Get to know the benefits to be part of our members!">
+    <meta name="author" content="Edrei Barajas">
+
+    <meta property="og:title" content="Coyoacan Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2024/05/13232652/museos-coyoacan-cdmx-1024x683.jpg">
+    <meta property="og:url" content="https://EdreiBarajas1407.github.io/wdd230/">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Coyoacan Chamber of Commerce</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Join Our Team</legend>
+                <label>First Name*<input type="text" id="fname" name="fname" required></label>
+                <label>Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label>Title or Position <input type="text" name="title" id="title" pattern="^[A-Za-z\- ]{7,}$"></label>
+                <label>Email*<input type="email" name="email" id="email" placeholder="mychamber@gmail.com"
+                        required></label>
+                <label>Phone Number* <input type="tel" name="phone" id="phone" required></label>
+                <label>Business/Organization's name <input type="text" name="business" id="business" required></label>
+                <div class="container">
+                    <!-- Membership Form -->
+                    <div class="form-container">
+                        <label>Membership Level:</label>
+                        <select id="membership" name="membership" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership (Non-Profit - Free)</option>
+                            <option value="bronze">Bronze Membership (15$)</option>
+                            <option value="silver">Silver Membership (25$)</option>
+                            <option value="gold">Gold Membership (50$)</option>
+                        </select>
+                        <div class="benefits-container">
+                            <h2>Membership Benefits</h2>
+                            <ul>
+                                <li><strong>NP Membership (Free):</strong> Access to community events.</li>
+                                <li><strong>Bronze Membership (15$):</strong> NP benefits + Basic training access.</li>
+                                <li><strong>Silver Membership (25$):</strong> Bronze benefits + Advertising + Event
+                                    discounts.</li>
+                                <li><strong>Gold Membership (50$):</strong> Silver benefits + Premium advertising +
+                                    Exclusive events.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <label>Business/Organization's Description<textarea name="description"
+                            id="description"></textarea></label>
+                    <input id="submit" type="submit" value="Join Us">
+            </fieldset>
+            <input type="hidden" id="timestamp" name="timestamp">
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Edrei Barajas | Coyoacan Chamber of Commerce | WDD230 Project</p>
+        <p> Last Modification: <span id="last-modified"></span></p>
+        <br>
+        <p>Contact Information: +52 55 4259 5303</p>
+        <p>chamberofcoyoacan@gmail.com</p>
+        <p>Moctezuma 45, Coyoacan, CDMX. Méxcio</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/time.js"></script>
+</body>
+
+</html>

@@ -242,15 +242,17 @@ main {
 }
 
 /*Join Page */
-
 form fieldset {
     border: 1px solid var(--primary-color);
     border-radius: 16px;
-    margin: .5rem 1rem;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
     font-family: var(--font-family);
     text-align: justify;
+    display: block;
+    width: 50%;
+    max-width: 600px;
 }
 
 form legend {

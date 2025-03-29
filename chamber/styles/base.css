@@ -289,6 +289,19 @@ form input {
     appearance: none;
 }
 
+form textarea {
+    margin-top: .1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid var(--accent1-color);
+    outline: none;
+    box-shadow: 0 0 8px var(--accent2-color);
+    transition: all 0.3s ease-in-out;
+}
+
 form input[type="submit"] {
     margin-top: 2rem;
     margin-bottom: 1rem;

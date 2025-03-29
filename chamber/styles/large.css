@@ -109,15 +109,15 @@
     .hover:hover {
         box-shadow: 0 0 50px #333;
     }
-}
 
-/*Join Page*/
+    /*Join Page*/
 
-fieldset {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    margin: 1rem auto;
-    padding: 1rem;
-    max-width: 640px;
+    fieldset {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        margin: 1rem auto;
+        padding: 1rem;
+        max-width: 640px;
+    }
 }

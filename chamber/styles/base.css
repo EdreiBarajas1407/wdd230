@@ -256,6 +256,7 @@ form fieldset {
 form legend {
     padding: 0 .5rem;
     font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 form label,
@@ -282,7 +283,7 @@ form input {
     display: block;
     border: solid 1px 6px;
     padding: .75rem;
-    color: #555;
+    color: var(--accent1-color);
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -308,6 +309,7 @@ form input[type="submit"] {
 .form-container {
     flex: 1;
     min-width: 300px;
+    text-align: left;
 }
 
 .benefits-container {
@@ -332,4 +334,16 @@ form input[type="submit"] {
 
 .wf1 input:required:valid {
     border-right: solid 8px green;
+}
+
+.thank-you {
+    margin: 0 1rem;
+}
+
+.thank-you h1 {
+    padding: 2rem 1rem;
+}
+
+.thank-you p {
+    padding-bottom: .5rem;
 }

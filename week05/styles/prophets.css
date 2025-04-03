@@ -1,0 +1,44 @@
+* {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(3, 3, 97);
+}
+
+h2 {
+    color: navy;
+    margin: 1rem 0 .5rem 0;
+}
+
+section {
+    margin: .2rem;
+    text-align: center;
+    background-color: rgb(179, 171, 224);
+    border: 1px solid rgba(0, 0, 0, .2);
+    max-width: 300px;
+}
+
+main {
+    background-color: #d5d4d5;
+    margin: 1rem;
+    padding: .5rem;
+    box-shadow: 0 0 32px rgba(0, 0, 0, .75);
+}
+
+img {
+    margin: 1rem 0;
+    width: 80%;
+    height: auto;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, .75);
+    border-radius: 2px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center;
+}

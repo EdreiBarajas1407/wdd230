@@ -2,7 +2,7 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const key = "fb29c431fd773dbb2b992a9ede88900a";
+const key = "2e0b12bcc0b73eae96db582989e62798";
 const lat = "49.75";
 const lon = "6.64";
 

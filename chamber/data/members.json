@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Instinto Biker",
+            "address": "Av Miguel Hidalgo 58-INT 4, San Lucas, Coyoacán, 04100 Ciudad de México, CDMX",
+            "phoneNumber": "+52 55 8801 2069",
+            "webUrl": "https://instintobiker.com.mx/",
+            "img": "./images/biker.webp",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Chez Vous #Timecafé",
+            "address": "Av Miguel Hidalgo 70, San Lucas, Coyoacán, 04030 Ciudad de México, CDMX",
+            "phoneNumber": "+52 55 7911 7544",
+            "webUrl": "http://www.chezvoustimecafe.com/",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fchezvoustimecafe.com%2F&psig=AOvVaw1esTSHCNwBGK2Zpt0S7btQ&ust=1743950560430000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCio5-QwYwDFQAAAAAdAAAAABAE",
+            "membership": "Gold"
+        },
+        {
+            "name": "Librerías El Sótano",
+            "address": "Av. Miguel Ángel de Quevedo 209, Romero de Terreros, Coyoacán, 04310 Ciudad de México, CDMX",
+            "phoneNumber": "+52 55 5339 1300",
+            "webUrl": "https://www.elsotano.com/",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FLibreriasElSotano%2F&psig=AOvVaw37vrzFpTpQisGq9CGaC_YO&ust=1743950602362000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiy8bOQwYwDFQAAAAAdAAAAABAJ",
+            "membership": "Silver"
+        },
+        {
+            "name": "Alfombras Dulce Hogar",
+            "address": "Escocia 54 Colonia Parque San Andrés, Del. Coyoacán, 04040 CDMX",
+            "phoneNumber": "+52 55 5544 0990",
+            "webUrl": "http://www.alfombrasdulcehogar.com/",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alfombrasdulcehogar.com%2F&psig=AOvVaw0A8TEfukwh6ZlxRPdiN3_q&ust=1743950658234000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj38c6QwYwDFQAAAAAdAAAAABAE",
+            "membership": "Silver"
+        },
+        {
+            "name": "Mítikah Torre Residencial",
+            "address": "Cto Interior Avenida Río Churubusco 601, Xoco, Benito Juárez, 03330 Ciudad de México, CDMX",
+            "phoneNumber": "+52 55 4165 2121",
+            "webUrl": "http://mitikah.com.mx/",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmitikahresidencial&psig=AOvVaw1mYXgzc0JKbb0rrFyVTKGZ&ust=1743950711843000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJit8OiQwYwDFQAAAAAdAAAAABAE",
+            "membership": "Gold"
+        },
+        {
+            "name": "Centro Formativo Multidisciplinario de Artes Marciales",
+            "address": "Ignacio Allende 5, Del Carmen, Coyoacán, 04100 Ciudad de México, CDMX",
+            "phoneNumber": "+52 56 1110 0202",
+            "webUrl": "https://www.instagram.com/cfmam_mx?igsh=ZXNvOTZ1djdoOTlo",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fartes-marciales-logo&psig=AOvVaw0idw1TR6pXlBq0x55BXjgA&ust=1743950743234000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiD1PaQwYwDFQAAAAAdAAAAABAR",
+            "membership": "Bronze"
+        },
+        {
+            "name": "COPY-ON",
+            "address": "Av. División del Nte. 2844, Parque San Andrés, Coyoacán, 04040 Ciudad de México, CDMX",
+            "phoneNumber": "+52 55 5544 8844",
+            "webUrl": "http://www.facebook.com/copi-On",
+            "img": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FCopi-On-100063769672162%2F&psig=AOvVaw0ND5a982M_CK_Tp2MvHSyl&ust=1743950783455000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOil4ouRwYwDFQAAAAAdAAAAABAE",
+            "membership": "Silver"
+        }
+    ]
+}

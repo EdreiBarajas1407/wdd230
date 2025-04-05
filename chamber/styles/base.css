@@ -369,7 +369,7 @@ form input[type="submit"] {
     border-radius: 4px;
     text-align: center;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
     flex: 1 1 300px;
     max-width: 100%;
     box-sizing: border-box;
@@ -414,6 +414,7 @@ form input[type="submit"] {
 .members-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .directory-card-text {

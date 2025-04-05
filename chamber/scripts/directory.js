@@ -24,8 +24,8 @@ function displayCards(directoryMembers) {
             <img src="${member.img}" alt="Image of ${member.name} business" loading="lazy"/>
             <h3>${member.name}</h3>
             <div class="directory-card-text">
-                <p>Address: ${member.address}</p>
-                <p>Phone: ${member.phoneNumber}</p>
+                <p>${member.address}</p>
+                <p>${member.phoneNumber}</p>
                 <a href="${member.webUrl}" target="_blank">${member.webUrl}</a>
                 <p>Membership: ${member.membership}</p>
             </div>

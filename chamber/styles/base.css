@@ -373,6 +373,7 @@ form input[type="submit"] {
     flex: 1 1 300px;
     max-width: 100%;
     box-sizing: border-box;
+    list-style: none;
 }
 
 .members-container.card img {

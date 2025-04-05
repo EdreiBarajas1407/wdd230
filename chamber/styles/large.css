@@ -122,6 +122,12 @@
     }
 
     /* Directory Page */
+    .members-section .members-container.card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
     .members-container.list>li {
         display: flex;
         grid-column: 1/2;

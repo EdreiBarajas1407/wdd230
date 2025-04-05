@@ -395,10 +395,6 @@ form input[type="submit"] {
     margin: 1rem 0;
 }
 
-.members-container.list img {
-    display: none;
-}
-
 .toggle-view {
     border: 1px solid var(--primary-color);
     padding: .5rem;

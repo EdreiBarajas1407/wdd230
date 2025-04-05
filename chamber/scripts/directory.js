@@ -1,14 +1,5 @@
 const baseURL = "https://EdreiBarajas1407.github.io/wdd230/";
-const url = 'https://EdreiBarajas1407.github.io/wdd230/chamber/data/members.json';
-
-async function generateDirectoryCards() {
-    const response = await fetch(directoryURL);
-    const data = await response.json();
-
-    console.log(data);
-    displayCards(data.members);
-
-};
+const url = './data/members.json';
 
 function displayCards(directoryMembers) {
     const cardsContainer = document.querySelector('.members-container');
@@ -20,11 +11,10 @@ function displayCards(directoryMembers) {
         <h3>${member.name}</h3>
         <div class="directory-card-text">
           <p>Address: ${member.address}</p>
-          <p>Phone: ${member.phone}</p>
-          <a href="${member.website}">${member.website}</a>
+          <p>Phone: ${member.phoneNumber}</p>
+          <a href="${member.webUrl}" target="_blank">${member.webUrl}</a>
         </div>
-  
-      `;
+        `;
 
         cardsContainer.appendChild(li);
     });

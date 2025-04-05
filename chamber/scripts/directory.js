@@ -1,4 +1,5 @@
-const url = './data/members.json';
+const baseURL = "https://EdreiBarajas1407.github.io/wdd230/";
+const linksURL = "https://EdreiBarajas1407.github.io/wdd230/chamber/data/links.json";
 
 async function generateDirectoryCards() {
     try {
@@ -7,7 +8,7 @@ async function generateDirectoryCards() {
 
         const data = await response.json();
         console.log(data);
-        displayCards(data.companies);
+        displayCards(data.members);
     } catch (error) {
         console.error('Hubo un error:', error);
     }

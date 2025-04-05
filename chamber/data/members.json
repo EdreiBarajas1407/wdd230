@@ -13,7 +13,7 @@
             "address": "Av Miguel Hidalgo 70, San Lucas, Coyoacán, 04030 Ciudad de México, CDMX",
             "phoneNumber": "+52 55 7911 7544",
             "webUrl": "http://www.chezvoustimecafe.com/",
-            "img": "",
+            "img": "./images/cafe.webp",
             "membership": "Gold"
         },
         {
@@ -21,7 +21,7 @@
             "address": "Av. Miguel Ángel de Quevedo 209, Romero de Terreros, Coyoacán, 04310 Ciudad de México, CDMX",
             "phoneNumber": "+52 55 5339 1300",
             "webUrl": "https://www.elsotano.com/",
-            "img": "",
+            "img": "./images/books.webp",
             "membership": "Silver"
         },
         {
@@ -29,7 +29,7 @@
             "address": "Escocia 54 Colonia Parque San Andrés, Del. Coyoacán, 04040 CDMX",
             "phoneNumber": "+52 55 5544 0990",
             "webUrl": "http://www.alfombrasdulcehogar.com/",
-            "img": "",
+            "img": "./images/carpet.webp",
             "membership": "Silver"
         },
         {
@@ -37,7 +37,7 @@
             "address": "Cto Interior Avenida Río Churubusco 601, Xoco, Benito Juárez, 03330 Ciudad de México, CDMX",
             "phoneNumber": "+52 55 4165 2121",
             "webUrl": "http://mitikah.com.mx/",
-            "img": "",
+            "img": "./images/mitikah.webp",
             "membership": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "Ignacio Allende 5, Del Carmen, Coyoacán, 04100 Ciudad de México, CDMX",
             "phoneNumber": "+52 56 1110 0202",
             "webUrl": "https://artesmarciales.com",
-            "img": "",
+            "img": "./images/fighter.webp",
             "membership": "Bronze"
         },
         {
@@ -53,7 +53,7 @@
             "address": "Av. División del Nte. 2844, Parque San Andrés, Coyoacán, 04040 Ciudad de México, CDMX",
             "phoneNumber": "+52 55 5544 8844",
             "webUrl": "http://www.facebook.com/copi-On",
-            "img": "",
+            "img": "./images/copy.webp",
             "membership": "Silver"
         }
     ]

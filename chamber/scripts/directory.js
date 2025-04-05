@@ -27,6 +27,7 @@ function displayCards(directoryMembers) {
                 <p>Address: ${member.address}</p>
                 <p>Phone: ${member.phoneNumber}</p>
                 <a href="${member.webUrl}" target="_blank">${member.webUrl}</a>
+                <p>Membership: ${member.membership}</p>
             </div>
         `;
         cardsContainer.appendChild(li);

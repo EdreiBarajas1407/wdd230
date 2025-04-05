@@ -370,10 +370,17 @@ form input[type="submit"] {
     text-align: center;
     padding: 1rem;
     margin: 1rem;
+    flex: 1 1 300px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .members-container.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
+    display: block;
 }
 
 .members-container.card h3 {
@@ -386,10 +393,6 @@ form input[type="submit"] {
     border-radius: 4px;
     padding: 1rem;
     margin: 1rem 0;
-}
-
-.members-container.list img {
-    display: none;
 }
 
 .toggle-view {
@@ -421,5 +424,8 @@ form input[type="submit"] {
 }
 
 .members-container.card {
-    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }

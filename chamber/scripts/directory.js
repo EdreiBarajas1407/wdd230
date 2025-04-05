@@ -1,5 +1,5 @@
 const baseURL = "https://EdreiBarajas1407.github.io/wdd230/";
-const linksURL = "https://EdreiBarajas1407.github.io/wdd230/chamber/data/links.json";
+const linksURL = "https://EdreiBarajas1407.github.io/wdd230/chamber/data/members.json";
 
 async function generateDirectoryCards() {
     try {

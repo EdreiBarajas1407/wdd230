@@ -33,6 +33,13 @@ header {
     justify-content: space-between;
 }
 
+.logo {
+    width: 50px;
+    height: fit-content;
+    align-self: center;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
 h1 {
     margin: auto;
     font-size: 1.5rem;
@@ -129,13 +136,46 @@ section {
     max-width: 800px;
 }
 
-.event-weather h2 {
-    border: 1px solid grey;
+.weather-card {
+    box-shadow: 2px 2px 8px var(--accent1-color);
+    border-radius: 8px;
+    background: var(--accent2-color);
+    max-width: 300px;
+    width: 80%;
+    margin: 1rem auto 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.2rem;
 }
 
-#events {
-    background-color: #f8f9fa;
-    text-align: justify;
+.weather-measure {
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.weather-card img {
+    width: 60px;
+}
+
+.daily-forecast {
+    width: 90%;
+    max-width: 580px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+.daily-forecast div {
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.daily-forecast p {
+    padding: .5rem;
 }
 
 #spotlights {

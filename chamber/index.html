@@ -26,6 +26,7 @@
 
 <body>
     <header>
+        <img class="logo" src="images/coyoacan-logo.png" alt="logo">
         <h1>Coyoacan Chamber of Commerce</h1>
         <nav>
             <ul class="navigation">
@@ -42,21 +43,22 @@
             <img src="images/hero_1.png" alt="Hero Image">
             <a href="join.html" class="join-button">Join Now</a>
         </section>
-        <section id="events-weather">
-            <div>
-                <h2>Upcoming Events</h2>
-                <p>Business Networking - March 25</p>
-                <p>Marketing Strategies Webinar - April 10</p>
-                <p>Local Business Expo - May 5</p>
-            </div>
-            <div>
-                <h2>Current Weather</h2>
-                <div>
-                    <p>🌤️ 75°F | Sunny</p>
-                    <p>Wind: 5 mph | Humidity: 60%</p>
-                </div>
-            </div>
-        </section>
+        <div id="event-banner" style="display: none;">
+            <p>🎉 Join us for the Coyoacan Chamber Meet and Greet – Wednesday at 7:00 p.m.! 🎉</p>
+            <button id="close-banner">❌</button>
+        </div>
+        <div>
+            <h2>Upcoming Events</h2>
+            <p>Business Networking - March 25</p>
+            <p>Marketing Strategies Webinar - April 10</p>
+            <p>Local Business Expo - May 5</p>
+        </div>
+        <aside class="weather-card">
+            <p class="weather"><img id="weather-icon" src="#" alt=""><span id="weather-info"></span></p>
+        </aside>
+        <aside class="daily-forecast weather-card" id="daily-forecast">
+
+        </aside>
         <h2>Spotlights</h2>
         <section id="spotlights">
             <div class="spotlight">
@@ -75,16 +77,18 @@
     </main>
 
     <footer>
-        <p>&copy;<span id="year"></span> | Edrei Barajas | Coyoacan Chamber of Commerce | WDD230 Project</p>
-        <p> Last Modification: <span id="last-modified"></span></p>
-        <br>
         <p>Contact Information: +52 55 4259 5303</p>
         <p>chamberofcoyoacan@gmail.com</p>
         <p>Moctezuma 45, Coyoacan, CDMX. Méxcio</p>
+        <br>
+        <p>&copy;<span id="year"></span> | Edrei Barajas | Coyoacan Chamber of Commerce | WDD230 Project</p>
+        <p> Last Modification: <span id="last-modified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
-
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>

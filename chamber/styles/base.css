@@ -179,23 +179,39 @@ section {
 }
 
 #spotlights {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 10px;
+    font-family: var(--font-family);
+    border: 1px solid var(--primary-color);
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: transparent;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
 
-#spotlights {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#spotlights img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
 }
 
-#spotlight {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border: 10px;
-    font-family: var(--font-family);
+#spotlights h4 {
+    font-size: var(--secondary-headings-size);
+}
+
+#spotlights p {
+    font-weight: 300;
 }
 
 .sociallinks {

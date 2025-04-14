@@ -55,6 +55,24 @@
         margin: 20px auto;
     }
 
+    .daily-forecast {
+        width: 90%;
+        max-width: 580px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 10px;
+    }
+
+    .daily-forecast div {
+        border: 1px solid rgba(0, 0, 0, 0.199);
+        border-radius: 8px;
+        min-width: 150px;
+    }
+
+    .daily-forecast p {
+        padding: .5rem;
+    }
+
     #spotlights {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

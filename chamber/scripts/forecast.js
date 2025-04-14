@@ -1,77 +1,97 @@
-export function displayForecast() {
+console.log("Script cargado ✅");
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM completamente cargado ✅");
+
     const forecastContainer = document.querySelector("#daily-forecast");
 
-    const key = "2e0b12bcc0b73eae96db582989e62798";
+    if (!forecastContainer) {
+        console.warn("⚠️ Contenedor #daily-forecast no se encontró.");
+        return;
+    }
+
+    const apiKey = "2e0b12bcc0b73eae96db582989e62798";
     const lat = "19.35";
     const lon = "-99.16";
-
-    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=22&units=metric&appid=${key}`;
-    const file = "scripts/weather.json";
+    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
     async function apiFetch() {
         try {
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
-                displayResults(data.list);
+                console.log("Datos recibidos:", data);
+                displayForecast(data.list);
             } else {
-                throw new Error(await response.text());
+                throw new Error(`Error en la respuesta: ${response.statusText}`);
             }
         } catch (error) {
-            console.log(error);
+            console.error("Error al obtener los datos:", error);
         }
     }
 
-    const displayResults = (weatherEvent) => {
-        const dates = [];
-        weatherEvent.forEach((lecture) => {
-            const day = new Date(lecture.dt_txt).getDate();
+    function displayForecast(weatherList) {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(today.getDate() + 1);
 
-            if (!(day in dates)) {
-                dates[day] = [];
-                dates[day].push(lecture.dt_txt);
+        const nextThreeDays = [tomorrow];
+
+        for (let i = 1; i < 3; i++) {
+            const nextDay = new Date(tomorrow);
+            nextDay.setDate(tomorrow.getDate() + i);
+            nextThreeDays.push(nextDay);
+        }
+
+        const dailyTemps = {};
+        weatherList.forEach((entry) => {
+            const date = new Date(entry.dt_txt);
+            const dayKey = date.toISOString().split("T")[0];
+
+            if (nextThreeDays.some(d => d.toISOString().split("T")[0] === dayKey)) {
+                if (!dailyTemps[dayKey]) {
+                    dailyTemps[dayKey] = [];
+                }
+                dailyTemps[dayKey].push(entry.main.temp);
             }
-            dates[day].push(lecture.main);
         });
 
-        const minMaxTemps = [];
-        dates.forEach((date) => {
-            const day = new Date(date[0]).toDateString();
+        for (const day in dailyTemps) {
+            const temps = dailyTemps[day];
+            const minTemp = Math.min(...temps);
+            const maxTemp = Math.max(...temps);
 
-            minMaxTemps[day] = {};
-
-            const temps = date.map((day) => day.temp, 10);
-            const validTemps = temps.filter((value) => typeof value === "number");
-            const minTemp = Math.min(...validTemps);
-            const maxTemp = Math.max(...validTemps);
-
-            minMaxTemps[day].date = date[0];
-            minMaxTemps[day].min = minTemp;
-            minMaxTemps[day].max = maxTemp;
-        });
-
-        for (const day in minMaxTemps) {
             const dayContainer = document.createElement("div");
+            dayContainer.style.border = "1px solid #ccc";
+            dayContainer.style.padding = "10px";
+            dayContainer.style.margin = "10px";
+            dayContainer.style.borderRadius = "10px";
+            dayContainer.style.backgroundColor = "#f9f9f9";
 
-            const dateStringContainer = document.createElement("p");
-            const minTempContainer = document.createElement("p");
-            const maxTempContainer = document.createElement("p");
+            const dateObj = new Date(day);
+            const dateString = dateObj.toLocaleDateString("en-US", {
+                weekday: "short",
+                month: "short",
+                day: "numeric"
+            });
 
-            const dateObject = new Date(minMaxTemps[day].date);
-            const monthName = dateObject.toLocaleString("default", { month: "short" });
-            const dayOfMonth = dateObject.getDate();
-            dateStringContainer.textContent = `${monthName} ${dayOfMonth}`;
+            const dateEl = document.createElement("p");
+            dateEl.textContent = dateString;
+            dateEl.style.fontWeight = "bold";
 
-            minTempContainer.textContent = `Min: ${minMaxTemps[day].min}°C`;
-            maxTempContainer.textContent = `Max: ${minMaxTemps[day].max}°C`;
+            const minEl = document.createElement("p");
+            minEl.textContent = `Min: ${minTemp.toFixed(1)}°F`;
 
-            dayContainer.appendChild(dateStringContainer);
-            dayContainer.appendChild(minTempContainer);
-            dayContainer.appendChild(maxTempContainer);
+            const maxEl = document.createElement("p");
+            maxEl.textContent = `Max: ${maxTemp.toFixed(1)}°F`;
+
+            dayContainer.appendChild(dateEl);
+            dayContainer.appendChild(minEl);
+            dayContainer.appendChild(maxEl);
 
             forecastContainer.appendChild(dayContainer);
         }
-    };
+    }
 
     apiFetch();
-}
+});

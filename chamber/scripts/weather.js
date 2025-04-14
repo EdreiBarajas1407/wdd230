@@ -30,7 +30,7 @@ const displayResults = (weatherEvent) => {
     weatherIcon.setAttribute('src', iconUrl);
     weatherIcon.setAttribute('alt', `${eventDescription} Icon`);
 
-    weatherInfo.textContent += `| ${temp} | ${eventDescription}`;
+    weatherInfo.textContent += ` ${temp}  ${eventDescription}`;
 }
 
 apiFetch()

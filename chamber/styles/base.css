@@ -277,6 +277,8 @@ section {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 1rem;
+    width: 35px;
+    height: 35px;
 }
 
 footer {
@@ -534,6 +536,7 @@ form input[type="submit"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 500px;
 }
 
 .directory-card-text {

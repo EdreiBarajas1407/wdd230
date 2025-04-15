@@ -136,6 +136,39 @@ section {
     max-width: 800px;
 }
 
+.event-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent1-color);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-banner p {
+    margin: 0;
+    flex: 1;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.event-banner button {
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.event-banner button:hover {
+    color: #ffffff;
+}
+
 .weather-card {
     box-shadow: 2px 2px 8px var(--accent1-color);
     border-radius: 8px;
@@ -145,10 +178,15 @@ section {
     margin: 1rem auto 1.5rem auto;
     display: flex;
     flex-direction: column;
-    place-items: center;
+    align-items: center;
     text-align: center;
     padding: .5rem;
     font-size: 1.2rem;
+}
+
+.weather-card img {
+    display: block;
+    margin: 0 auto;
 }
 
 .weather-measure {

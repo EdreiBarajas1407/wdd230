@@ -277,8 +277,6 @@ section {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 1rem;
-    width: 35px;
-    height: 35px;
 }
 
 footer {
